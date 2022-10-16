@@ -1,19 +1,18 @@
 #include <iostream>
+void input(int, int);
 using namespace std;
-void display(int, int);
 int main()
 {
+	int hours, minutes;
 	cout << "Enter the number of hours: ";
-	int hour;
-	cin >> hour;
-	cout << "Enter the number of minutes: ";
-	int min;
-	cin >> min;
-	display(hour, min);
+	cin >> hours;
+	cout << "Enter the number of minute: ";
+	cin >> minutes;
+	input(hours, minutes);
 	return 0;
 }
 
-void display(int hour, int min)
+void input(int hours, int minutes)
 {
-	cout << "Time: " << hour << ":" << min;
+	cout << "Time: " << hours << ":" << minutes;
 }
